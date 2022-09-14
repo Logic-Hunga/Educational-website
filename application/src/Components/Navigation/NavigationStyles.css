@@ -1,0 +1,94 @@
+.nav-container {
+  display: block;
+  width: 100%;
+  box-shadow: 0px 2px 1px rgb(34, 34, 34);
+  /* position: stick; */
+  height: 80px;
+}
+.head {
+    padding: 20px;
+
+}
+.head .head-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head .head-logo h1 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+.head .head-logo span {
+    text-transform: uppercase;
+}
+.head .social-icons {
+    text-align: center;
+    
+}
+.head .social-icons .head-icon{
+    margin: 0px 7px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2.5px solid var(--main-color);
+   
+
+}
+.nav-bar {
+   position: sticky;
+    right: 0;
+    top: 3px;
+    z-index: 1000;
+    width: 100%;
+
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(-bg-color);
+  /* height: 5rem; */
+ 
+}
+.nav-bar .logo {
+  font-size: 3rem;
+}
+
+.nav-bar .nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.logo .logo-icon {
+  color: white !important;
+  transition: var(--transition);
+}
+.logo .logo-icon:hover {
+  color: var(--main-color) !important;
+  /* color: grey!important; */
+}
+.nav-bar .nav-menu .link {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-weight: 300;
+  padding: 10px 25px;
+  margin: 0 6px;
+  transition: var(--transition);
+  cursor: pointer;
+  /* width:100px; */
+}
+
+.nav-bar .nav-menu .link:hover {
+  background: var(--main-color);
+}
+.nav-bar .nav-menu button:hover {
+  background-color: white !important;
+
+}
+/* Humburger  @media queary*/
+.hamburger-icon {
+  color: white;
+  font-size: 36px;
+  display: none;
+  cursor: pointer;
+}
