@@ -1,0 +1,102 @@
+ .features {
+    padding: 70px 0; 
+}
+.feature-title h3 {
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+.feature-flex {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   text-align: center;
+
+}
+
+.feature {
+    flex-basis: 50%;
+    
+}
+
+.student-mg {
+    flex-basis: 50%;
+    margin: auto;
+   
+    padding: 1rem;
+}
+.student-mg img {
+   
+    width: 100%;
+  
+    border-radius: 1 0px;
+    margin:auto;
+} 
+
+.feature h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: var(--main-color);
+
+}
+
+.feature-disc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.feature-icon  {
+    width: 50px;
+    height: 50px;
+    font-size: 37px;
+    border-radius: 8px;
+    border: 2px solid var(--main-color);
+    
+}
+.feature-text p {
+    padding: 0 20px;
+    text-align: initial;
+
+}
+.features .column {
+    padding: 10px 20px 10px 20px;
+    height: 150px;
+    transition: var(--transition);
+}
+.features .column:hover {
+    background-color:var(--main-color);
+
+}
+.features .column:hover h1 {
+    color: var(--paragraph-color);
+}
+.features .column:hover .feature-icon {
+    border: 2px solid var(--paragraph-color);
+    
+}
+
+
+/* Media quarry */
+@media screen and (max-width: 770px) {
+    .feature-title h3{
+    
+        font-size: 24px;
+        text-align: center;
+    }
+    .features {
+        padding: 10px;
+    }
+    .feature {
+        flex-basis: 100%;
+    }
+    .student-mg {
+        flex-basis: 100%;
+    }
+    .student-mg img{
+        width : 100%;
+    }
+
+}

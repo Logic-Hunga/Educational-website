@@ -5,6 +5,8 @@
   --second-color: gray;
   --other-color:#1214;
   --transition: all 0.40s ease;
+  --paragraph-color: #ccc;
+  --border: rgba(255, 255, 255, 0.1);
 }
 
 span {
@@ -26,7 +28,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-color);
-  color: white;
+  color: var(--paragraph-color);
+  overflow-x: hidden;
+  
 }
 
 code {
@@ -60,6 +64,7 @@ h2 {
 }
 p {
   font-size: 1.1rem;
+  color: var(--paragraph-color);
 }
 
 button {
@@ -73,10 +78,12 @@ button {
   font-weight: 300;
   display: flex;
   transition: var(--transition);
+  cursor: pointer;
 }
 button:hover {
   color: var(--bg-color);
   background: white;
+  color: var(--main-color) ;
   
 }
 img {

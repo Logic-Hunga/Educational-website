@@ -51,9 +51,28 @@
  
 }
 .nav-bar .logo {
-  font-size: 3rem;
+  height: 50px;
+  width: 50px;
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
-
+.nav-bar .logo .logo-icon{
+  
+  
+  font-size: 40px;
+  animation: rotation 10s linear infinite;
+}
+@keyframes rotation {
+  from{
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .nav-bar .nav-menu {
   display: flex;
   align-items: center;
@@ -75,20 +94,72 @@
   margin: 0 6px;
   transition: var(--transition);
   cursor: pointer;
-  /* width:100px; */
+}
+.nav-bar .nav-menu #home {
+  font-weight: bold;
+  color: var(--main-color);
+}
+.nav-bar .nav-menu #home:hover {
+  font-weight: bold;
+  color: white;
 }
 
 .nav-bar .nav-menu .link:hover {
   background: var(--main-color);
+  border-radius: 30px;
 }
-.nav-bar .nav-menu button:hover {
-  background-color: white !important;
+.nav-bar .nav-menu .credential {
+  font-weight: bold;
+  background: var(--main-color);
+  border-radius: 30px;
+}
+.nav-bar .nav-menu .credential:hover{
+ color:var(--main-color);
+ background:white;
+  
+ 
+}
 
-}
 /* Humburger  @media queary*/
 .hamburger-icon {
   color: white;
   font-size: 36px;
   display: none;
   cursor: pointer;
+}
+
+
+@media screen and (max-width: 940px) { 
+  .hamburger-icon {
+    display: block;
+    z-index: 15;
+  }
+  .nav-menu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background: rgba(4, 1, 1, 0.8);
+    border-bottom: 1px solid var(--main-color);
+    border-radius: 10px;
+    top: 0;
+    right: -100%;
+    align-items: center;
+    justify-content:center; 
+    transition: 0.5s ease-in;
+  }
+
+  /* Toggle animation */
+  .nav-bar .active {
+    right: 0;
+  }
+  .nav-menu li {
+    
+    margin: 1rem !important;
+    
+  
+  }
+  .nav-menu .link {
+    font-size: 1.4rem !important;
+  }
 }

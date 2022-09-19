@@ -1,6 +1,6 @@
 import React from 'react';
 import "./HomeStyles.css";
-import student from "../../Assets/student.png";
+import Bethel from "../../Assets/Bethel.jpg";
 
 
 const Home = () => {
@@ -10,16 +10,18 @@ const Home = () => {
           
             {/* left side  */}
             <div className="home-text">
-                <h1>Welcome To</h1>
-                <h2>Educational<span>Registration System</span></h2>
+                <h2>Welcome to the LogicStudios</h2>
+                <h1>Start Learning</h1>
+                <h3><span>Computer Programming online in</span></h3>
+                
         
                 <div className="animation-container">
                     <div className="animation">
-                        <div className="animation-item">Register Your Examination</div>
-                        <div className="animation-item">Register Your Courses</div>
-                        <div className="animation-item">Pay your Tuition fee</div>
-                        <div className="animation-item">Apply your loan</div>
-                        <div className="animation-item">Register your religion organization</div>  
+                        <div className="animation-item">Java Script language</div>
+                        <div className="animation-item">Python  language</div>
+                        <div className="animation-item">Java  language</div>
+                        <div className="animation-item">C++ language</div>
+                        <div className="animation-item">C# language</div>  
                     </div>
                 </div> 
                 <div className="texts">
@@ -34,12 +36,14 @@ const Home = () => {
             
             {/* right side */}
             <div className="home-picture">
-                <img src={student}></img>
+                   
+                    <img src={Bethel}></img>
+                   
             </div>
-            
-                
-                
+                  
         </div>
+        
+        <div className="line"></div> 
       </>
     );
 }
