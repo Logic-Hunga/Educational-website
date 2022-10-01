@@ -1,77 +1,84 @@
-.contact {
-    width: 100%;
-    padding-top: 3rem;
+.main-content {
+    padding-top: 50px;
     
-
 }
-.form-title h1 {
-    font-size:  2.5em;
-    font-weight: 440;
-    margin-bottom: 2rem;
+.main-content h2 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
-
-.form-wrapper-contact {
-     display: grid; 
-    
-    place-items: center; 
-}
-.form-contact-container {
+.contact-section {
+   border: 1px solid var(--border);
+   padding: 20px;
+   border-radius: 30px;
     width: 100%;
-    
-    padding: 3px 30px;
-    background: #ffffff1a;
-    backdrop-filter: blur(20px);
-    box-shadow: 0 0 30px #0000002a;
-    border-radius: 10px;
-}
-
-.form-wrapper-contact h1 {
-    margin: 0;
-    padding: 0 0 20px;
-    font-size: 2rem;
-    font-weight: 300;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-.form-wrapper-contact input {
-    width: 100%;
-    margin-bottom: 1rem;
-}
-.form-wrapper-contact input[type=text], 
-.form-wrapper-contact input[type=gmail], 
-.form-wrapper-contact input[type=password],
-.form-wrapper-contact textarea
-{
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: var(--paragraph-color);
-    font-size: 16px;
-}
-.form-wrapper-contact .buttons {
     display: flex;
     align-items: center;
-   
-    justify-content: space-between;
-}
-.form-wrapper-contact button {
-    font-size: 1.2rem;
-    position: relative;
-    width: 110px;
-}
-.form-wrapper-contact button .icon {
-    position: absolute;
-    right: 4px;
-    bottom:6px;
-    font-size: 2.0rem;
+    justify-content: center;
+    
 }
 
-@media screen and (max-width:1263px) {
-   .form-title {
-    text-align: center;
-   }
-   
+
+
+
+.contact-form {
+    max-width: 700px;
+    
+}
+
+
+.contact-form input[type=text],
+ .contact-form input[type=email],
+ .contact-form textarea {
+     width: 100%;
+     border: none;
+    height: 40px;
+    margin-top: 12px;
+ 
+    outline: none;
+    font-size: 19px;
+    border-radius: 12px;
+    background: var(--border);
+    color: var(--padding-color);
+    
+    
+
+ }
+  .contact-form input, .contact-form textarea {
+     padding-left: 1rem;
+    
+  }
+  .contact-form button {
+    position: relative;
+    width: 115px;
+  }
+  .contact-form button .icon {
+    position: absolute;
+    font-size: 2rem;
+    right: 6px;
+    top: 5px;
+  }
+  @media screen and (max-width:1275px) {
+     .contact-section {
+        width: 100%;
+     }
+     .main-content h2 {
+        text-align: center;
+     }
+  }
+  @media screen and (max-width:731px) {
+    .contact-section {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    
+    
+     
+  }
+   @media screen and (max-width:400px) {
+    .contact-section button{
+        width: 100%;
+        flex-direction: column;
+    }
 }

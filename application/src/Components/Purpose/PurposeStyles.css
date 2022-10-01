@@ -44,3 +44,11 @@
     
 }
 
+@media screen and (max-width: 1256px){
+    .purpose {
+        width: 100%;
+            display: grid;
+            justify-content:center;
+    }
+    
+}

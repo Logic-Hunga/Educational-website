@@ -1,6 +1,6 @@
 import React from "react";
 import "./BlogStyles.css"
-import Bethel from "../../Assets/Bethel.jpg"
+import landingPage from "../../Assets/landingPage.png";
 const Blog = () => {
     return <div className="container">
         <div className="blog">
@@ -13,7 +13,7 @@ const Blog = () => {
             <div className="blog-container">
                 <div className="blog-box">
                     <div className="blog-image">
-                        <img src={Bethel}></img>
+                        <img src={landingPage}></img>
                     </div>
 
                     <div className="blog-texts">
@@ -25,7 +25,7 @@ const Blog = () => {
                 </div>
                 <div className="blog-box">
                     <div className="blog-image">
-                        <img src={Bethel}></img>
+                        <img src={landingPage}></img>
                     </div>
 
                     <div className="blog-texts">
@@ -37,7 +37,7 @@ const Blog = () => {
                 </div>
                 <div className="blog-box">
                     <div className="blog-image">
-                        <img src={Bethel}></img>
+                        <img src={landingPage}></img>
                     </div>
 
                     <div className="blog-texts">
@@ -49,7 +49,7 @@ const Blog = () => {
                 </div>
                 <div className="blog-box">
                     <div className="blog-image">
-                        <img src={Bethel}></img>
+                        <img src={landingPage}></img>
                     </div>
 
                     <div className="blog-texts">

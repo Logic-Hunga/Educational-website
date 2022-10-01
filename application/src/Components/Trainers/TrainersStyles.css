@@ -1,0 +1,97 @@
+.our-trainers {
+    padding-top: 70px;
+}
+.our-trainers h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+
+}
+.profiles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 40px;
+}
+.profiles .profile {
+    flex-basis: 240px;
+    border: 1px solid var(--border);
+    padding: 40px;
+    width: 400px;
+}
+.profiles .profile .profile-img {
+    height: 260px;
+    width: 260px;
+    padding:10px;
+    border-radius:50%;
+    border: 7px solid var(--border); 
+    filter: grayscale(100%);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.profiles .profile:hover .profile-img{
+    
+     filter: grayscale(0%);
+}
+.profiles .profile .user-name {
+    margin-top: 3rem;
+    font-weight: 300;
+    font-size: 2.0rem;
+    
+}
+.profiles .profile h5 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+    color: var(--border);
+}
+.profiles .profile p {
+    line-height: 1.4;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.social-icons .icon {
+    height: 45px;
+    width: 45px;
+    border: 2px solid var(--border);
+    margin: 7px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: var(--transition);
+}
+.social-icons .icon:hover {
+    color: var(--main-color);
+}
+
+@media only screen and (max-width: 1119px) {
+    .profiles {
+        flex-direction: column;
+    }
+    .profiles .profile {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+    .profiles .profile p {
+        text-align: center;
+        margin: 20px 60px 80px 60px;
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .our-trainers h3{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 3.5rem;
+    }
+     .profiles  {
+       padding: 10px;
+        margin : 20px 0;
+     }
+     .profiles  p{
+
+        margin : 20px 10px 80px 10px;
+     }
+}

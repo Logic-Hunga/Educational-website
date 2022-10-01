@@ -23,6 +23,9 @@ import {
 import {
    GiTwirlyFlower
 } from "react-icons/gi";
+import {
+   SiAnaconda
+} from "react-icons/si";
 
 
 const Navigation = () => {
@@ -31,38 +34,24 @@ const Navigation = () => {
     const handleNav = () => setNav(!nav)
     return (
         <>
-           <div className="nav-container">
+           <div name="top"  className="nav-container">
             <div className="container">
                 
-            {/* <div className="head">
-                    <div className="head-flex">
-                        <div className="head-logo">
-                            <h1>Group 13</h1>
-                            <span>Online Registration System</span>
-                        </div>
-
-                        <div className="social-icons">
-                            <BsFacebook  className="head-icon"/>
-                            <BsTwitter  className="head-icon"/>
-                            
-                          
-                        </div>
-                    </div>
-            </div> */}
             
                 
                 <div className="nav-bar">
                     
                     <div className="logo">
-                        <GiTwirlyFlower className="logo-icon"/>
+                        < SiAnaconda className="logo-icon"/>
                     </div>
 
                     <ul className={nav ? "nav-menu active" : "nav-menu"}>
                         <li><Link to="/" className="link" id="home">Home</Link></li>
                         <li><Link to="/About" className="link">About</Link></li>
                         <li><Link to="/Courses" className="link">Courses</Link></li>
-                        <li><Link to="/Pages" className="link">Pages</Link></li>
+                       
                         <li><Link to="/Blog" className="link">Blog</Link></li>
+                        <li><Link to="/Contact" className="link">Contact</Link></li>
                         <li><Link to="/SignUp" className="link credential"><AiOutlineUserAdd/>Sign up</Link></li>
                         <li><Link to="/Login" className="link credential"><AiOutlineUser />Login </Link></li>  
                     </ul>

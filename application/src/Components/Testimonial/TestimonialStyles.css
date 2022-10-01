@@ -1,0 +1,86 @@
+.testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.testimonial h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.testimonial .testimonial-cards {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.testimonial .testimonial-cards .card  {
+    width: 350px;
+    border-radius: 15px;
+    padding: 20px 30px;
+    margin: 5px;
+    position: relative;
+    background: var(--border);
+    box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+
+}
+.testimonial .testimonial-cards .card  img {
+    height:70px;
+    width: 70px;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    position: absolute;
+    top: -10%;
+    left: 15px;
+}
+
+.testimonial .testimonial-cards .card p {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+.testimonial .testimonial-cards .card h2 {
+    font-size: 30px;
+    margin-bottom: 4px;
+    
+}
+.testimonial .testimonial-cards .card h4 {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.testimonial .testimonial-cards .card .quote{
+    font-size: 70px;
+    position: absolute;
+    right: 24px;
+    bottom: 20px;
+}
+.testimonial .testimonial-cards .card:hover {
+    transform: scale(1.09);
+    z-index: 1000;
+    background: var(--main-color);
+    
+}
+.testimonial .testimonial-cards .card:hover h4 {
+    color: var(--background-color);
+}
+.testimonial .testimonial-cards .card:hover img {
+     box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.2);
+}
+
+@media screen  and (max-width:1086px){
+    .testimonial .testimonial-cards{
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .testimonial .testimonial-cards .card {
+        margin: 45px 0;
+        width: 100%;
+    }
+    
+}

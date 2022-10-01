@@ -1,6 +1,6 @@
 import React from 'react';
 import "./HomeStyles.css";
-import Bethel from "../../Assets/Bethel.jpg";
+import landingPage from "../../Assets/landingPage.png";
 
 
 const Home = () => {
@@ -37,7 +37,7 @@ const Home = () => {
             {/* right side */}
             <div className="home-picture">
                    
-                    <img src={Bethel}></img>
+                    <img src={landingPage}></img>
                    
             </div>
                   
